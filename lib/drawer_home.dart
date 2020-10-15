@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:todo2/main.dart';
 import 'package:todo2/user_profiles.dart';
 import 'travel_profiles.dart';
 import 'user_profiles.dart';
@@ -19,12 +20,12 @@ class DrawerHome extends StatelessWidget {
           ),
           new ListTile(
             leading: Icon(Icons.person,
-                color: Hexcolor('FFCC80'),
+                color: my_yellow,
                 size: 50),
             title: new Text('Nutzerprofile',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Hexcolor('707070'), //#707070
+                  color: my_dark_grey, //#707070
                 )),
             onTap: () {
               Navigator.push(context, MaterialPageRoute<Widget>(
@@ -37,12 +38,12 @@ class DrawerHome extends StatelessWidget {
           ),
           new ListTile(
             leading: Icon(Icons.card_travel,
-                color: Hexcolor('FFCC80'),
+                color: my_yellow,
                 size: 50),
             title: new Text('Reiseprofile',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Hexcolor('707070'), //#707070
+                  color: my_dark_grey, //#707070
                 )),
             onTap: () {
               Navigator.push(context, MaterialPageRoute<Widget>(
@@ -55,12 +56,12 @@ class DrawerHome extends StatelessWidget {
           ),
           new ListTile(
             leading: Icon(Icons.map,
-                color: Hexcolor('FFCC80'),
+                color: my_yellow,
                 size: 50),
             title: new Text('Meine Karten',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Hexcolor('707070'), //#707070
+                  color: my_dark_grey, //#707070
                 )),
             /*onTap: () {
                   Navigator.push(context, MaterialPageRoute<Widget>(
@@ -73,12 +74,12 @@ class DrawerHome extends StatelessWidget {
           ),
           new ListTile(
             leading: Icon(Icons.settings,
-                color: Hexcolor('FFCC80'),
+                color: my_yellow,
                 size: 50),
             title: new Text('Einstellungen',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Hexcolor('707070'), //#707070
+                  color: my_dark_grey, //#707070
                 )),
             /*onTap: () {
                   Navigator.push(context, MaterialPageRoute<Widget>(

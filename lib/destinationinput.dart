@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'zieleingabe_start.dart';
-import 'zieleingabe_ziel.dart';
-import 'zieleingabe_details.dart';
+import 'destinationinput_start.dart';
+import 'destinationinput_destination.dart';
+import 'destinationinput_details.dart';
 import 'main.dart';
 
-class Zieleingabe extends StatefulWidget {
+class Destinationinput extends StatefulWidget {
   @override
-  _ZieleingabeState createState() => _ZieleingabeState();
+  _DestinationinputState createState() => _DestinationinputState();
 }
 
-class _ZieleingabeState extends State<Zieleingabe> {
+class _DestinationinputState extends State<Destinationinput> {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          //Überschrift oberer Block
           decoration: BoxDecoration(
               border: Border.all(width: 0, color: my_middle_grey),
               borderRadius: BorderRadius.only(
@@ -37,7 +36,6 @@ class _ZieleingabeState extends State<Zieleingabe> {
           ),
         ),
         Container(
-            //oberer Block
             margin: EdgeInsets.only(left: 25, right: 25, bottom: 25),
             padding: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
             decoration: BoxDecoration(
@@ -60,12 +58,12 @@ class _ZieleingabeState extends State<Zieleingabe> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 new Flexible(
-                  child: ZieleingabeStart(),
+                  child: DestinationinputStart(),
                 ),
                 new Flexible(
-                  child: ZieleingabeZiel(),
+                  child: DestinationinputDestination(),
                 ),
-                ZieleingabeDetails(),
+                DestinationInputDetails(),
               ],
               //onChanged: ,
             )),

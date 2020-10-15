@@ -3,16 +3,8 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:todo2/footer.dart';
 import 'user_item.dart';
 import 'add_user_dialog.dart';
-import 'travel_profiles.dart';
 import 'drawer_home.dart';
 
-
-//void main() => runApp(MaterialApp(home: FirstTest()));
-//void main() => runApp(MaterialApp(home: Counter()));
-//void main() => runApp(MaterialApp(home: RoutePlanning()));
-//void main() => runApp(MaterialApp(home: UserProfiles()));
-
-///////////////NUTZERPROFILE///////////////
 class UserProfiles extends StatefulWidget {
   @override
   _UserProfilesState createState() => _UserProfilesState();
@@ -25,7 +17,7 @@ class _UserProfilesState extends State<UserProfiles> {
       user.add(item);
     });
     Navigator.of(context)
-        .pop(); //damit der Alert Dialog nach dem Hinzufügen eines Items wieder verschwindet
+        .pop(); //so that the alert dialog disappears after adding an item
   }
 
   void deleteUser(int index) {

@@ -23,7 +23,7 @@ class TravelItem extends StatelessWidget {
             ),
             child: ListTile(
               contentPadding: EdgeInsets.only(left: 25, right: 15),
-              leading: Icon(Icons.person,
+              leading: Icon(Icons.card_travel,
                   color: my_yellow, size: 50),
               title: Text(travel,
                   style: TextStyle(

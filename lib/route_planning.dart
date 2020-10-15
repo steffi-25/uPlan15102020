@@ -9,7 +9,7 @@ import 'footer.dart';
 import 'favorite_destination.dart';
 import 'favorite_destination_item.dart';
 import 'favorite_routes.dart';
-import 'zieleingabe.dart';
+import 'destinationinput.dart';
 import 'home_button.dart';
 import 'route_planning2.dart';
 import 'main.dart';
@@ -21,8 +21,6 @@ class RoutePlanning extends StatefulWidget {
 }
 
 class _RoutePlanningState extends State<RoutePlanning> {
-  //const RoutePlanning(this.user);
-  //final String user;
   final _scrollController = ScrollController();
 
   @override
@@ -34,12 +32,7 @@ class _RoutePlanningState extends State<RoutePlanning> {
               style: TextStyle(color: my_white, fontSize: 30),
             ),
             iconTheme: new IconThemeData(color: my_white)
-            //backgroundColor: Hexcolor("#48ACB8"),
             ),
-        //floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        //floatingActionButton: HomeButton(),
-        //bottomNavigationBar: Footer(),
         drawer: DrawerHome(),
         body: Scrollbar(
             controller: _scrollController,
@@ -55,7 +48,7 @@ class _RoutePlanningState extends State<RoutePlanning> {
                       fit: BoxFit.fitWidth,
                     )),
                     child: Column(children: [
-                      Zieleingabe(),
+                      Destinationinput(),
                       FavoriteRoutes(),
                     ])))));
   }

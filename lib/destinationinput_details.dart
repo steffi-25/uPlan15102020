@@ -7,12 +7,12 @@ import 'route_planning2.dart';
 import 'travel_item.dart';
 import 'travel_profiles.dart';
 
-class ZieleingabeDetails extends StatefulWidget {
+class DestinationInputDetails extends StatefulWidget {
   @override
-  _ZieleingabeDetailsState createState() => _ZieleingabeDetailsState();
+  _DestinationInputDetailsState createState() => _DestinationInputDetailsState();
 }
 
-class _ZieleingabeDetailsState extends State<ZieleingabeDetails> {
+class _DestinationInputDetailsState extends State<DestinationInputDetails> {
   var date = DateTime.now();
   DateTime selectedDate = DateTime.now();
   DateTime pickedDate;
@@ -82,21 +82,21 @@ class _ZieleingabeDetailsState extends State<ZieleingabeDetails> {
                     Icon(Icons.calendar_today, color: my_yellow),
                     //Text("${selectedDate.toLocal()}".split(' ')[0]),
                     SizedBox(
-                      width: 20.0,
+                      width: 18.0,
                     ),
                     MaterialButton(
                       color: my_middle_turquoise,
                       textColor: my_white,
                       child:
                       Text("${pickedDate.day}.${pickedDate.month}.${pickedDate.year}"),
-                      onPressed: _pickTime,
+                      onPressed: _pickDate,
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 18,
                     ),
                     Icon(Icons.access_time, color: my_yellow),
                     SizedBox(
-                      width: 20,
+                      width: 18,
                     ),
                     MaterialButton(
                         color: my_middle_turquoise,

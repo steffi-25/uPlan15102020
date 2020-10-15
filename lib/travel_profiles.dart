@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'travel_item.dart';
 import 'add_user_dialog.dart';
-import 'user_profiles.dart';
 import 'drawer_home.dart';
-import 'home_button.dart';
 import 'footer.dart';
 import 'main.dart';
 
-///////////////NUTZERPROFILE///////////////
 class TravelProfiles extends StatefulWidget {
   @override
   _TravelProfilesState createState() => _TravelProfilesState();
@@ -21,7 +18,7 @@ class _TravelProfilesState extends State<TravelProfiles> {
       travel.add(item);
     });
     Navigator.of(context)
-        .pop(); //damit der Alert Dialog nach dem Hinzufügen eines Items wieder verschwindet
+        .pop(); //so that the alert dialog disappears after adding an item
   }
 
   void deleteTravel(int index) {

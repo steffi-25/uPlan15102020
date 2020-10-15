@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'dart:async';
 
-class ZieleingabeStart extends StatefulWidget {
+import 'package:todo2/main.dart';
+
+class DestinationinputStart extends StatefulWidget {
   @override
-  _ZieleingabeStartState createState() => _ZieleingabeStartState();
+  _DestinationinputStartState createState() => _DestinationinputStartState();
 }
 
-class _ZieleingabeStartState extends State<ZieleingabeStart> {
+class _DestinationinputStartState extends State<DestinationinputStart> {
   void updateUserTextStart(String text) {
     setState(() {
       userTextStart = text;
@@ -22,13 +24,13 @@ class _ZieleingabeStartState extends State<ZieleingabeStart> {
       child:
       TextField(
         maxLines: 1,
-        onChanged: updateUserTextStart, //gibt auch onsubmitted;
+        onChanged: updateUserTextStart, //onChanged or onSubmitted
         decoration: InputDecoration(
           border: OutlineInputBorder(),
-          icon: Icon(Icons.place, color: Hexcolor('FFCC80'),),
+          icon: Icon(Icons.place, color: my_yellow,),
           labelText: 'Start',
           hintText: 'Start',
-          suffixIcon: Icon(Icons.keyboard, color: Colors.grey),
+          suffixIcon: Icon(Icons.keyboard, color: my_middle_turquoise),
         ),
       ),
     );

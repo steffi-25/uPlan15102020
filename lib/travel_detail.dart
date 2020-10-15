@@ -66,7 +66,7 @@ class _TravelDetailState extends State<TravelDetail> {
                         child: ListTile(
                           contentPadding: EdgeInsets.only(
                               left: 15, right: 15, top: 8, bottom: 8),
-                          leading: Icon(Icons.person,
+                          leading: Icon(Icons.card_travel,
                               color: my_yellow, size: 50),
                           title: Text(widget.travel,
                               style: TextStyle(

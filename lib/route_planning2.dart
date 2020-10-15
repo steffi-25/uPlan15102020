@@ -8,7 +8,7 @@ import 'footer.dart';
 import 'favorite_destination.dart';
 import 'favorite_destination_item.dart';
 import 'favorite_routes.dart';
-import 'zieleingabe.dart';
+import 'destinationinput.dart';
 import 'home_button.dart';
 
 class RoutePlanning2 extends StatefulWidget {
@@ -16,8 +16,6 @@ class RoutePlanning2 extends StatefulWidget {
   _RoutePlanning2State createState() => _RoutePlanning2State();
 }
 class _RoutePlanning2State extends State<RoutePlanning2> {
-  //const RoutePlanning(this.user);
-  //final String user;
   final _scrollController = ScrollController();
 
   @override
